@@ -1,0 +1,238 @@
+@font-face {    
+    font-family: Righteous;
+    src: url(../fonts/Righteous/Righteous-Regular.ttf);    
+}
+
+@font-face {    
+    font-family: "Open Sans";
+    src: url(../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);    
+}
+
+:root {
+    --font-sans: font-family:"Open Sans", Arial, Helvetica, sans-serif;
+    --font-heading: font-family: Righteous, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --hero-img: url(../images/star-sky-wide-p.jpg);
+    --white: #fff;
+    --green: green;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {    
+    padding: 0;  
+    margin: 0;  
+    font: inherit;
+}
+
+html{
+    color-scheme: dark light;
+    font-family:"Open Sans", Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, 
+h2, 
+h3, 
+p {
+    padding-bottom: 1rem;
+}
+
+p {
+    text-align: justify;
+}
+
+h1 {
+    font-family: Righteous, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    text-transform: capitalize;    
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+header div {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+footer {    
+    background-color: rgb(223, 223, 223);
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 4rem;
+    padding: 2rem 0;
+}
+
+footer section {
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+footer h1,
+h2 
+{
+    font-size: 0.7rem;
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+nav ul {
+    display: none;
+    gap: 3rem;
+    transition: 0.3s ease-in;     
+}
+
+nav li,
+footer li 
+{
+    list-style-type: none;
+}
+
+
+.menu-button {
+    background-color: transparent;
+    border: 0;
+    font-size: 1.5rem;    
+    cursor: pointer;
+}
+
+.menu__open .menu-button {
+    color:#fff;
+}
+
+.menu__open {
+    background-color: green;
+    position: absolute;
+    top:0;
+    right:0;
+    width: 70%;
+    height: 100%;
+    text-align: right;
+    padding-top: 2rem;
+    padding-right: 1rem;    
+}
+
+.menu__open ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;    
+    margin-top: 3rem;
+}
+
+.menu__open a {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+nav a:hover {
+    color: rgb(128, 128, 128);
+}
+
+.backdrop {
+    visibility: hidden;
+    position: absolute;
+    right:0;
+    top:0;
+    width: 1px;
+    height: 100%;
+    background: rgba(3, 87, 1, 0.95);
+    transition: 0.1s ease-in;  
+}
+
+.backdrop__show {
+    visibility: visible; 
+    width: 100%;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.infocard {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap:1rem;
+    font-size: 0.8rem;
+}
+
+.copyright {
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width:800px) {
+    .hamburger {
+        display: none;
+    }
+    nav {
+        width: auto;
+        display: flex;   
+        visibility: visible;   
+        align-items: flex-end;  
+    }
+
+    nav ul {
+        display: flex;
+    }
+    nav a {
+        color: #000;
+        font-size: 1rem;
+        transition: all 1s fade-out;
+    }
+    .menu-button {    
+        display: none;
+    }
+    footer section {
+        flex-direction:row;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+      color: #eee;
+      background: #121212;
+    }
+  
+    body a {
+      color: #809fff;
+    }
+
+   header {
+    background-color: rgb(31, 31, 31);
+   }
+
+   .menu__open {
+    background-color: rgb(5, 25, 5);
+   }
+
+   .backdrop {
+    background-color: rgba(6, 33, 6, 0.95);
+   }
+  }
