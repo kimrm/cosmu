@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cosmu - Community Science Museum. A science museum for everyone."
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script defer src="../js/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/33714fa395.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cosmu - Community Science Museum</title>
+  </head>
+  <body>
+    <!-- Backdrop for the slide-in menu -->
+    <div class="backdrop" id="backdrop"></div>
+
+    <header class="header-normal">
+      <div class="container">
+        <a href="/"
+          ><picture>
+            <source
+              srcset="../images/logo-darkmode.png"
+              media="(prefers-color-scheme: light)"
+            />
+            <source
+              srcset="../images/logo-darkmode.png"
+              media="(prefers-color-scheme: dark)"
+            />
+            <img
+              src="../images/logo-darkmode.png"
+              class="logo"
+              alt="Cosmu logo"
+            /> </picture
+        ></a>
+        <nav id="nav">
+          <button class="menu-button" id="menu_button">
+            <i class="fa-solid fa-bars" id="menu_icon"></i>
+          </button>
+          <ul>
+            <li>
+              <a href="#" class="nav__link-active"><span>Exhibitions</span></a>
+            </li>
+            <li>
+              <a href="#" class="nav__link"><span>Learning Center</span></a>
+            </li>
+            <li>
+              <a href="#" class="nav__link"><span>About Cosmu</span></a>
+            </li>
+            <li>
+              <a href="#" class="nav__link"><span>Contact us</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-normal">
+      <section class="subpage-header green">
+        <section class="container">
+          <h1>Robotics & AI</h1>
+          <p>We have exciting exhibitions for all interesses.</p>
+        </section>
+      </section>
+      <section class="container">
+        <section class="content">
+          <aside>
+            <ul>
+              <li>
+                <a href="evolution.html" class="exhibition-link">Evolution</a>
+              </li>
+              <li>
+                <a href="cosmology.html" class="exhibition-link">Cosmology</a>
+              </li>
+              <li>
+                <a href="robotics.html" class="exhibition-link active"
+                  >Robotics & AI</a
+                >
+              </li>
+              <li>
+                <a href="biology.html" class="exhibition-link"
+                  >Biology and Medicine</a
+                >
+              </li>
+              <li>
+                <a href="ecology.html" class="exhibition-link">Ecology</a>
+              </li>
+            </ul>
+          </aside>
+          <section class="content__body">
+            <section>
+              <h1>Robotics & AI</h1>
+              <p>
+                The information revolution is here and robotics and artificial
+                intelligence are the science of the future. From useful home
+                applications of AI to industrial uses of robotics, the future is
+                here. You can even say hello and shake the hand of Rob the
+                Robot.
+              </p>
+            </section>
+            <section class="image">
+              <img src="../images/exhibitions/robotics.jpg" alt="" />
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <section class="container">
+        <article>
+          <p>
+            We are a community museum focusing on bringing science to all ages.
+            Our exhibitions are made with exploration in mind, to enable
+            learning by doing. All our exhibitions are free to explore. Guided
+            tours once an hour for a small fee.
+          </p>
+          <p>Welcome to us.</p>
+        </article>
+      </section>
+      <section class="container">
+        <article>
+          <h1>Opening hours</h1>
+          <article class="infocard">
+            <div>Mon. - Fri.</div>
+            <div>10am - 20pm</div>
+            <div>Sat.</div>
+            <div>10am - 16am</div>
+          </article>
+        </article>
+        <article>
+          <h1>Quick links</h1>
+          <ul>
+            <li><a href="#">Support the museum</a></li>
+            <li><a href="#">Looking for a job?</a></li>
+            <li><a href="#">Exhibitions</a></li>
+          </ul>
+        </article>
+        <article>
+          <h1>How to contact us</h1>
+          <article class="infocard">
+            <div>Address</div>
+            <div>
+              <p>Musum road 123</p>
+              <p>9999 Musum City</p>
+            </div>
+            <div>Phone</div>
+            <div>41 12 98 87</div>
+            <div>E-mail</div>
+            <div>kim@kimrune.dev</div>
+          </article>
+        </article>
+      </section>
+      <section class="container">
+        <span class="copyright"
+          >Copyright © 2022 Cosmu - Community Science Museum
+        </span>
+      </section>
+    </footer>
+  </body>
+</html>

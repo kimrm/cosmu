@@ -1,0 +1,113 @@
+
+.hero,
+.hero__img
+{
+    height: 600px;
+}
+
+.hero {    
+    position: relative;
+    /* background-color: rgba(0, 0, 0, .6); */
+    background-color: var(--black);
+    background: radial-gradient(rgba(0, 0, 0, .1), #000000);
+    background-size: 100%;
+    color: var(--white);    
+    display: flex;    
+    width: 100%;
+    align-items: center;         
+}
+
+.hero__img {
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: -10;        
+    width: 100vw;
+    object-fit:cover ;
+    object-position: right; 
+    mix-blend-mode: color rgb(255, 255, 255);    
+}
+
+.hero__content {    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero p {
+    max-width: 500px;
+}
+
+.cta {    
+    position: relative;        
+    color: var(--white);              
+    background-color: var(--btn-green);
+}
+
+.cta span {
+    position: relative;
+    z-index: 2;
+}
+
+.cta::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        opacity: 0;
+        height: 100%;
+        background: #238505;
+        border-radius: 10px;
+        transition: all .35s;
+}
+
+.cta:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+
+.opportunity {
+    background-color: var(--highlight-dark);
+}
+
+.opportunity article {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:     
+    'image h3'
+    'image p'
+    'image a';
+    gap:1rem;    
+    padding: 4rem 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.opportunity img {
+    grid-area: image;
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.opportunity h3 {
+    grid-area: h3;
+}
+
+.opportunity p {
+    grid-area: p;
+    max-width: 400px;
+}
+
+.opportunity a {
+    grid-area: a;
+    width: 100%;
+    display: inline-block;
+    width: 15rem;
+    text-align: center;
+}

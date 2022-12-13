@@ -8,7 +8,7 @@
       name="description"
       content="Cosmu - Community Science Museum. A science museum for everyone."
     />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script defer src="js/main.js"></script>
     <script
       src="https://kit.fontawesome.com/33714fa395.js"
@@ -17,55 +17,275 @@
     <title>Cosmu - Community Science Museum</title>
   </head>
   <body>
-    <!-- Backdrop for the slide-in menu -->
-    <div class="backdrop" id="backdrop"></div>
+    <div class="slidein-menu" id="slidein_menu" aria-hidden="true">
+      <ul>
+        <li>
+          <a href="exhibitions/evolution.html" class="button outline"
+            ><span>Exhibitions</span></a
+          >
+        </li>
+        <li>
+          <a href="#" class="button"><span>Facilities</span></a>
+        </li>
+        <li>
+          <a href="#" class="button"><span>About Cosmu</span></a>
+        </li>
+        <li>
+          <a href="#" class="button"><span>Contact us</span></a>
+        </li>
+      </ul>
+    </div>
+
+    <button class="menu-button" id="menu_button">
+      <i
+        class="fa-solid fa-bars"
+        id="menu_icon"
+        aria-hidden="true"
+        title="Hamburger menu icon"
+        ><span class="fa-sr-only">Hamburger menu icon</span></i
+      >
+    </button>
 
     <header>
-      <div class="container">
-        <a href="/"
-          ><img
-            class="logo"
-            src="images/logo_500px.png"
-            alt="Cosmu logo"
-            id="logo"
-        /></a>
-        <nav id="nav">
-          <button class="menu-button" id="menu_button">
-            <i class="fa-solid fa-bars" id="menu_icon"></i>
-          </button>
-          <ul>
-            <li><a href="#">Exhibitions</a></li>
-            <li><a href="#">Learning Center</a></li>
-            <li><a href="#">About Cosmu</a></li>
-            <li><a href="#">Contact us</a></li>
-          </ul>
-        </nav>
+      <div class="header__top">
+        <div class="header__container">
+          <a href="/"
+            ><img src="../images/logo.svg" class="logo" alt="Cosmu logo"
+          /></a>
+          <nav id="main_nav">
+            <ul class="menu" id="menu">
+              <li>
+                <a href="exhibitions/evolution.html"
+                  ><span>Exhibitions</span></a
+                >
+              </li>
+              <li>
+                <a href="#"><span>Facilities</span></a>
+              </li>
+              <li>
+                <a href="#"><span>About Cosmu</span></a>
+              </li>
+              <li>
+                <a href="#"><span>Contact us</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="container">
-        <h1>Explore together</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          veritatis corrupti saepe magnam libero necessitatibus cum voluptatibus
-          quis hic officia cumque, vel aut alias tenetur natus assumenda,
-          doloremque veniam. Deleniti!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque earum
-          eius quibusdam cupiditate quae qui doloribus voluptatibus facere, sunt
-          maxime in nihil fuga commodi magni dignissimos. Vero esse illo
-          nesciunt.
-        </p>
+      <section class="hero">
+        <img
+          src="images/star-sky-wide-p.jpg"
+          alt="Stars in space"
+          class="hero__img"
+        />
+        <section class="container hero__content">
+          <h1>Explore together</h1>
+          <p>
+            Join us at the Community Science Museum where we’re committed to
+            making science accessible to all.
+          </p>
+          <div>
+            <a href="#" class="button cta">
+              <span>Our exhibitions</span>
+            </a>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <section class="wrapper posts">
+          <section class="container__wide" id="postsList">
+            <h2>Welcome to Cosmu</h2>
+            <ul class="responsive-list">
+              <li>
+                <article class="post-teaser">
+                  <img
+                    src="images/articles/article_1.jpg"
+                    alt="Girl looking at board with maths"
+                  />
+                  <article>
+                    <h1>At Cosmu everyone is welcome</h1>
+                    <p>
+                      Everybody can be a scientist. Old - young, girls and boys,
+                      everyone is welcome!
+                    </p>
+                    <a href="#" class="link">Read more </a>
+                  </article>
+                </article>
+              </li>
+              <li>
+                <article class="post-teaser">
+                  <img
+                    src="images/articles/vr.jpg"
+                    alt="Kid with VR glasses on"
+                  />
+                  <article>
+                    <h1>Interactive learning-exhibitions</h1>
+                    <p>
+                      The museum has top modern VR ecuipment for interactive
+                      learning. Move around and explore fantastic worlds in 3D
+                    </p>
+                    <a href="#" class="link">Read more </a>
+                  </article>
+                </article>
+              </li>
+              <li>
+                <article class="post-teaser">
+                  <img
+                    src="images/articles/science.jpg"
+                    alt="Kid operating a technological machine"
+                  />
+                  <article>
+                    <h1>Learning by doing</h1>
+                    <p>
+                      Learn how science work by operating machinery and devices.
+                    </p>
+                    <a href="#" class="link">Read more </a>
+                  </article>
+                </article>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </section>
+
+      <section class="wrapper exhibitions">
+        <section class="container">
+          <h2>Visit some of our populare exhibitions today!</h2>
+          <ul class="responsive-list">
+            <li>
+              <article class="card purple-gradient">
+                <h1>Evolution</h1>
+                <p>
+                  Visit Woolly, our famous Mammooth skeleton. We even have some
+                  dinosaurs!
+                </p>
+                <a
+                  href="exhibitions/evolution.html"
+                  aria-label="Link to the evolution exhibition"
+                  title="Link to the evolution exhibition"
+                  class="link"
+                  ><i class="fa-solid fa-circle-arrow-right"></i
+                ></a>
+              </article>
+            </li>
+            <li>
+              <article class="card brown-gradient">
+                <h1>Cosmology</h1>
+                <p>
+                  Explore the wonders of our cosmos in our fantastic exhibition.
+                </p>
+                <a
+                  href="exhibitions/cosmology.html"
+                  aria-label="Link to the cosmology exhibition"
+                  title="Link to the cosmology exhibition"
+                  class="link"
+                  ><i class="fa-solid fa-circle-arrow-right"></i
+                ></a>
+              </article>
+            </li>
+            <li>
+              <article class="card green-gradient">
+                <h1>Robotics & AI</h1>
+                <p>Say hello and shake the hand of Rob the Robot.</p>
+                <a
+                  href="exhibitions/robotics.html"
+                  aria-label="Link to the robotics exhibition"
+                  title="Link to the robotics exhibition"
+                  class="link"
+                  ><i class="fa-solid fa-circle-arrow-right"></i
+                ></a>
+              </article>
+            </li>
+          </ul>
+          <a href="#" class="button more-button outline mx-4"
+            ><span>Check out all our exhibitions</span></a
+          >
+        </section>
+      </section>
+
+      <section class="wrapper events">
+        <section class="container__wide">
+          <h2>Special events coming soon at Cosmu</h2>
+          <ul class="responsive-list">
+            <article class="event">
+              <img
+                src="images/articles/prof-sheila.jpg"
+                alt="Woman professor next to whiteboard"
+              />
+              <h1>Aeronautics lectures</h1>
+              <p>
+                Lectures from Prof Sheila Widnall from the Massachusetts
+                Institute of Technology.
+              </p>
+              <i class="fa-regular fa-calendar-days"></i>
+            </article>
+            <article class="event">
+              <img
+                src="images/articles/night-in-the-museum.jpg"
+                alt="Museum at night time. Exhibition with elephant/mamut"
+              />
+              <h1>Night in the museum</h1>
+              <p>
+                Get your family together for an exciting night in the museum as
+                you sleep over beside dinosaurs and science displays.
+              </p>
+              <i class="fa-regular fa-calendar-days"></i>
+            </article>
+            <article class="event">
+              <img
+                src="images/articles/energetica.jpg"
+                alt="Energy experiment device"
+              />
+              <h1>Energetica exhibition</h1>
+              <p>
+                On loan from the NEMO Science Museum in Amsterdam, the
+                Energetica exhibition is coming to the Community Science Museum.
+              </p>
+              <i class="fa-regular fa-calendar-days"></i>
+            </article>
+          </ul>
+          <a href="#" class="button more-button outline mx-4"
+            >Read more on our events page</a
+          >
+        </section>
+      </section>
+
+      <section class="wrapper opportunity">
+        <section class="container">
+          <article>
+            <img src="images/work-with-us.jpg" alt="Man with two thumbs up" />
+            <h2>Work with us?</h2>
+            <p>
+              Are you interested in working in a museum? Do you enjoy the fun
+              and excitement of sharing the wonders of nature with people?
+            </p>
+            <a href="#" class="button more-button outline"
+              ><span>Apply for internship</span></a
+            >
+          </article>
+        </section>
       </section>
     </main>
 
     <footer>
-      <!-- change: footer -> section:container -> section:footer-stuff -->
       <section class="container">
         <article>
-          <h1>Opening hours</h1>
+          <p>
+            We are a community museum focusing on bringing science to all ages.
+            Our exhibitions are made with exploration in mind, to enable
+            learning by doing. All our exhibitions are free to explore. Guided
+            tours once an hour for a small fee.
+          </p>
+          <p>Welcome to us.</p>
+        </article>
+      </section>
+      <section class="container">
+        <article>
+          <h2>Opening hours</h2>
           <article class="infocard">
             <div>Mon. - Fri.</div>
             <div>10am - 20pm</div>
@@ -74,15 +294,17 @@
           </article>
         </article>
         <article>
-          <h1>Quick links</h1>
+          <h2>Quick links</h2>
           <ul>
             <li><a href="#">Support the museum</a></li>
             <li><a href="#">Looking for a job?</a></li>
             <li><a href="#">Exhibitions</a></li>
+            <li><a href="#">Special events</a></li>
+            <li><a href="#">Contact us</a></li>
           </ul>
         </article>
         <article>
-          <h1>How to contact us</h1>
+          <h2>How to contact us</h2>
           <article class="infocard">
             <div>Address</div>
             <div>
