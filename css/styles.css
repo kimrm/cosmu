@@ -510,7 +510,7 @@ main {
     display: grid;
     grid-template-rows: auto 40%;    
     background-color: #191919;
-    padding: 4rem;
+    padding: 4rem 0;
     border-radius: 10px;
 }
 
