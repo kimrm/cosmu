@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cosmu - Community Science Museum. A science museum for everyone."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/main.js"></script>
+    <script defer src="js/imageGallery.js"></script>
+    <script
+      src="https://kit.fontawesome.com/33714fa395.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cosmu - Community Science Museum</title>
+  </head>
+  <body>
+    <div id="backdrop"></div>
+
+    <div class="image-gallery" id="imageGallery">
+      <div class="close" id="galleryClose">
+        <button><i class="fa-solid fa-circle-xmark"></i></button>
+      </div>
+      <h1 id="galleryTitle">Title</h1>
+      <div class="image-view">
+        <img src="/images/work-with-us.jpg" alt="" id="imageView" />
+      </div>
+      <div class="gallery" id="galleryList"></div>
+    </div>
+
+    <div class="slidein-menu" id="slidein_menu" aria-hidden="true">
+      <ul>
+        <li>
+          <a href="/" class="button outline"><span>Home</span></a>
+        </li>
+        <li>
+          <a href="/exhibitions/evolution.html" class="button outline"
+            ><span>Exhibitions</span></a
+          >
+        </li>
+        <li>
+          <a href="/facilities.html" class="button"><span>Facilities</span></a>
+        </li>
+        <li>
+          <a href="/about.html" class="button"><span>About Cosmu</span></a>
+        </li>
+        <li>
+          <a href="/contact.html" class="button"><span>Contact us</span></a>
+        </li>
+      </ul>
+    </div>
+
+    <button class="menu-button" id="menu_button">
+      <i
+        class="fa-solid fa-bars"
+        id="menu_icon"
+        aria-hidden="true"
+        title="Hamburger menu icon"
+        ><span class="fa-sr-only">Hamburger menu icon</span></i
+      >
+    </button>
+
+    <header>
+      <div class="header__top">
+        <div class="header__container">
+          <a href="/"
+            ><img src="../images/logo.svg" class="logo" alt="Cosmu logo"
+          /></a>
+          <nav id="main_nav">
+            <ul class="menu" id="menu">
+              <li>
+                <a href="/" class="home"
+                  ><i class="fa-regular fa-hand-point-left"></i
+                  ><span>Home</span></a
+                >
+              </li>
+              <li>
+                <a href="exhibitions/evolution.html"
+                  ><span>Exhibitions</span></a
+                >
+              </li>
+              <li>
+                <a href="/facilities.html" class="active"
+                  ><span>Facilities</span></a
+                >
+              </li>
+              <li>
+                <a href="/about.html"><span>About Cosmu</span></a>
+              </li>
+              <li>
+                <a href="/contact.html"><span>Contact us</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="wrapper facilities_offers">
+        <section class="container facilities__header">
+          <h1>The Museum Facilities</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            repellendus quis illum laudantium vero fugiat atque, esse, similique
+            sint delectus nesciunt aspernatur magnam hic ipsa ducimus omnis
+            voluptate quos architecto?
+          </p>
+        </section>
+        <section class="container">
+          <section class="facilities__library">
+            <div class="image">
+              <img
+                src="/images/facilites/library.jpg"
+                alt="3 stories library"
+              />
+            </div>
+            <section>
+              <h1>Cosmu Library</h1>
+              <p>
+                Our library is 3 stories packed with books. Spend a whole day
+                and submerge into knowledge of all the science fields. The
+                library follows the museums opening hours.
+              </p>
+              <section class="gallery">
+                <div>
+                  <h2>Gallery</h2>
+                </div>
+                <div>
+                  <a href="#" id="libraryGalleryLink1"
+                    ><img
+                      src="/images/gallery/library/lib1.jpg"
+                      alt="Library gallery 1"
+                  /></a>
+                  <a href="#" id="libraryGalleryLink2"
+                    ><img
+                      src="/images/gallery/library/lib2.jpg"
+                      alt="Library gallery 2"
+                  /></a>
+
+                  <a href="#" id="libraryGalleryLink3"
+                    ><img
+                      src="/images/gallery/library/lib3.jpg"
+                      alt="Library gallery 3"
+                  /></a>
+
+                  <a href="#" id="libraryGalleryLink4"
+                    ><img
+                      src="/images/gallery/library/lib4.jpg"
+                      alt="Library gallery 4"
+                  /></a>
+                </div>
+              </section>
+            </section>
+          </section>
+        </section>
+        <section class="facilities__restaurant">
+          <!-- <img src="/images/facilites/restaurant.jpg" alt="" /> -->
+          <section class="container__wide">
+            <h1>Food and drink</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+              quisquam unde ullam eius, sint sit itaque rem quasi omnis ab
+              voluptates! Recusandae ab minus odio laudantium. Eaque
+              exercitationem ex quod?
+            </p>
+            <section class="gallery">
+              <div>
+                <h2>Gallery</h2>
+              </div>
+              <div>
+                <a href="#" id="restaurantGalleryLink1"
+                  ><img
+                    src="/images/gallery/restaurant/restaurant1.jpg"
+                    alt="Restaurant gallery 1"
+                /></a>
+
+                <a href="#" id="restaurantGalleryLink2"
+                  ><img
+                    src="/images/gallery/restaurant/restaurant2.jpg"
+                    alt="Restaurant gallery 2"
+                /></a>
+
+                <a href="#" id="restaurantGalleryLink3"
+                  ><img
+                    src="/images/gallery/restaurant/restaurant3.jpg"
+                    alt="Restaurant gallery 3"
+                /></a>
+
+                <a href="#" id="restaurantGalleryLink4"
+                  ><img
+                    src="/images/gallery/restaurant/restaurant4.jpg"
+                    alt="Restaurant gallery 4"
+                /></a>
+              </div>
+            </section>
+          </section>
+        </section>
+        <section class="container">
+          <section class="facilities__shop">
+            <div class="image">
+              <img src="/images/facilites/shop.jpg" alt="3 stories library" />
+            </div>
+            <section>
+              <h1>Cosmu Shop</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Sapiente voluptatem omnis quo ipsum commodi ipsa quam veniam ea?
+                Iste excepturi enim quos ipsum deleniti perspiciatis ut
+                asperiores delectus, officiis quas!
+              </p>
+              <section class="gallery">
+                <div>
+                  <h2>Gallery</h2>
+                </div>
+                <div>
+                  <a href="#" id="shopGalleryLink1"
+                    ><img
+                      src="/images/gallery/shop/shop1.jpg"
+                      alt="Shop gallery 1"
+                  /></a>
+
+                  <a href="#" id="shopGalleryLink2"
+                    ><img
+                      src="/images/gallery/shop/shop2.jpg"
+                      alt="Shop gallery 2"
+                  /></a>
+
+                  <a href="#" id="shopGalleryLink3"
+                    ><img
+                      src="/images/gallery/shop/shop3.jpg"
+                      alt="Shop gallery 3"
+                  /></a>
+
+                  <a href="#" id="shopGalleryLink4"
+                    ><img
+                      src="/images/gallery/shop/shop4.jpg"
+                      alt="Shop gallery 4"
+                  /></a>
+                </div>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section>
+        <section class="for-kids">
+          <section class="container">
+            <img src="/images/facilites/kids.svg" alt="" />
+            <h1>For kids</h1>
+            <p>
+              Are you a young person looking to learn more about science? Come
+              on down to our museum, there’s plenty to see and do. You can learn
+              about Newtonian physics from our bumper swing, or why not travel
+              back in time and meet our resident Woolly Mammoth? Our exhibits
+              are designed to be accessible for interested minds, so make sure
+              you come ready to learn and explore. We also have the Young Stars
+              club which meets once a week on a Saturday between 10:00 and 13:00
+              where you’ll get to explore and experiment with our team of
+              experts. During the school holidays we run special holiday clubs
+              where you can join other children your age to go on a journey of
+              discovery. Each holiday we pick a new theme to explore. To find
+              out more about the holiday club and how you can join, send us a
+              message.
+            </p>
+          </section>
+        </section>
+        <section class="for-teachers">
+          <section class="container">
+            <img src="/images/facilites/teachers.svg" alt="" />
+            <h1>For teachers</h1>
+            <p>
+              As a community-driven museum, we want to work with schools to
+              create places of learning and exploring. Our team are on hand to
+              give your students guided tours of the museum, teach them in our
+              learning laboratory, and provide great video presentations that
+              will excite and inspire them. Please get in touch with us here to
+              find out more about our facilities and to arrange a time to bring
+              your students through for a visit.
+            </p>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <section class="container">
+        <article>
+          <p>
+            We are a community museum focusing on bringing science to all ages.
+            Our exhibitions are made with exploration in mind, to enable
+            learning by doing. All our exhibitions are free to explore. Guided
+            tours once an hour for a small fee.
+          </p>
+          <p>Welcome to us.</p>
+        </article>
+      </section>
+      <section class="container">
+        <article>
+          <h2>Opening hours</h2>
+          <article class="infocard">
+            <div>Mon. - Fri.</div>
+            <div>10am - 20pm</div>
+            <div>Sat.</div>
+            <div>10am - 16am</div>
+          </article>
+        </article>
+        <article>
+          <h2>Quick links</h2>
+          <ul>
+            <li><a href="#">Support the museum</a></li>
+            <li><a href="#">Looking for a job?</a></li>
+            <li><a href="#">Exhibitions</a></li>
+            <li><a href="#">Special events</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </article>
+        <article>
+          <h2>How to contact us</h2>
+          <article class="infocard">
+            <div>Address</div>
+            <div>
+              <p>Musum road 123</p>
+              <p>9999 Musum City</p>
+            </div>
+            <div>Phone</div>
+            <div>41 12 98 87</div>
+            <div>E-mail</div>
+            <div>kim@kimrune.dev</div>
+          </article>
+        </article>
+      </section>
+      <section class="container">
+        <span class="copyright"
+          >Copyright © 2022 Cosmu - Community Science Museum
+        </span>
+      </section>
+    </footer>
+  </body>
+</html>
