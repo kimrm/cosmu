@@ -110,3 +110,4 @@ document.querySelector("#shopGalleryLink4").onclick =  showShopGallery;
 
 document.querySelector("#galleryClose").addEventListener("click", closeGallery);
 document.querySelector("#backdrop").addEventListener("click", closeGallery);
+

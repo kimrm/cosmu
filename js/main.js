@@ -29,5 +29,36 @@ function reportWindowSize() {
 window.onresize = reportWindowSize;
 
 
+if (window.location.hash) {    
+    const target = document.querySelector(window.location.hash);
+    if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }    
+}
 
+document.querySelector("#contactForm").onsubmit = function() {
+    const modalHeading = document.querySelector("#modalHeading");
+    const modalContent = document.querySelector("#modalContent");
 
+    const contactName = document.querySelector("#contactName");
+
+    modalHeading.textContent = "Thank you, " + contactName.value + "!";
+    modalContent.textContent = "We appreciate you reaching out and will reply to you shortly.";
+    document.querySelector("#backdrop").classList.toggle("backdrop");
+    document.querySelector("#contactModal").classList.toggle("open");
+    
+    return false;
+};
+
+document.querySelector("#closeModal").onclick = function() {
+    document.querySelector("#backdrop").classList.toggle("backdrop");
+    document.querySelector("#contactModal").classList.toggle("open");
+    const contactName = document.querySelector("#contactName");
+    const contactEmail = document.querySelector("#contactEmail");    
+    const contactMessage = document.querySelector("#contactMessage");
+    contactName.value = "";
+    contactEmail.value = "";
+    contactMessage.value = "";
+
+    return false;
+};

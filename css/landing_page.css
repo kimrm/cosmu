@@ -76,10 +76,8 @@
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-areas:     
-    'image h3'
-    'image p'
-    'image a';
-    gap:1rem;    
+    'image article';
+    gap:2rem;    
     padding: 4rem 0;
     width: 100%;
     margin: 0 auto;
@@ -95,13 +93,8 @@
     object-position: center;
 }
 
-.opportunity h3 {
-    grid-area: h3;
-}
-
-.opportunity p {
-    grid-area: p;
-    max-width: 400px;
+.opportunity article {
+    grid-area: article;
 }
 
 .opportunity a {
@@ -110,4 +103,14 @@
     display: inline-block;
     width: 15rem;
     text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    .researchers .two-col {
+        display: grid;
+        grid-template-areas:
+        'image article';       
+        grid-template-columns: 40% auto; 
+        gap: 2rem;
+    }
 }

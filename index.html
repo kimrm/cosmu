@@ -20,7 +20,7 @@
     <div class="slidein-menu" id="slidein_menu" aria-hidden="true">
       <ul>
         <li>
-          <a href="/exhibitions/evolution.html" class="button outline"
+          <a href="/exhibitions/evolution.html" class="button"
             ><span>Exhibitions</span></a
           >
         </li>
@@ -29,9 +29,6 @@
         </li>
         <li>
           <a href="/about.html" class="button"><span>About Cosmu</span></a>
-        </li>
-        <li>
-          <a href="/contact.html" class="button"><span>Contact us</span></a>
         </li>
       </ul>
     </div>
@@ -61,9 +58,6 @@
               <li>
                 <a href="/about.html"><span>About Cosmu</span></a>
               </li>
-              <li>
-                <a href="/contact.html"><span>Contact us</span></a>
-              </li>
             </ul>
           </nav>
         </div>
@@ -84,7 +78,7 @@
             making science accessible to all.
           </p>
           <div>
-            <a href="#" class="button cta">
+            <a href="/exhibitions/evolution.html" class="button cta">
               <span>Our exhibitions</span>
             </a>
           </div>
@@ -108,7 +102,7 @@
                       Everybody can be a scientist. Old - young, girls and boys,
                       everyone is welcome!
                     </p>
-                    <a href="#" class="link">Read more </a>
+                    <a href="/article1.html" class="link">Read more </a>
                   </article>
                 </article>
               </li>
@@ -124,7 +118,7 @@
                       The museum has top modern VR ecuipment for interactive
                       learning. Move around and explore fantastic worlds in 3D
                     </p>
-                    <a href="#" class="link">Read more </a>
+                    <a href="/article2.html" class="link">Read more </a>
                   </article>
                 </article>
               </li>
@@ -139,7 +133,7 @@
                     <p>
                       Learn how science work by operating machinery and devices.
                     </p>
-                    <a href="#" class="link">Read more </a>
+                    <a href="/article3.html" class="link">Read more </a>
                   </article>
                 </article>
               </li>
@@ -197,7 +191,9 @@
               </article>
             </li>
           </ul>
-          <a href="#" class="button more-button outline mx-4"
+          <a
+            href="/exhibitions/evolution.html"
+            class="button more-button outline mx-4"
             ><span>Check out all our exhibitions</span></a
           >
         </section>
@@ -217,7 +213,10 @@
                 Lectures from Prof Sheila Widnall from the Massachusetts
                 Institute of Technology.
               </p>
-              <i class="fa-regular fa-calendar-days"></i>
+              <div class="calendar-view">
+                <i class="fa-regular fa-calendar-days"></i
+                ><span> 20, 21, 22 dec.</span>
+              </div>
             </article>
             <article class="event">
               <img
@@ -229,7 +228,10 @@
                 Get your family together for an exciting night in the museum as
                 you sleep over beside dinosaurs and science displays.
               </p>
-              <i class="fa-regular fa-calendar-days"></i>
+              <div class="calendar-view">
+                <i class="fa-regular fa-calendar-days"></i
+                ><span> Every wednesday</span>
+              </div>
             </article>
             <article class="event">
               <img
@@ -241,10 +243,13 @@
                 On loan from the NEMO Science Museum in Amsterdam, the
                 Energetica exhibition is coming to the Community Science Museum.
               </p>
-              <i class="fa-regular fa-calendar-days"></i>
+              <div class="calendar-view">
+                <i class="fa-regular fa-calendar-days"></i
+                ><span> All of december</span>
+              </div>
             </article>
           </ul>
-          <a href="#" class="button more-button outline mx-4"
+          <a href="/events.html" class="button more-button outline mx-4"
             >Read more on our events page</a
           >
         </section>
@@ -252,7 +257,7 @@
 
       <section class="wrapper researchers">
         <section class="container">
-          <article class="reseachers-card">
+          <section class="two-col">
             <img src="/images/undraw_researching_re_fuod.svg" alt="" />
             <article>
               <h1>For researchers</h1>
@@ -263,9 +268,11 @@
                 laboratory space, and a working relationship with a number of
                 universities around the country.
               </p>
-              <a href="#" class="button outline">Contact us</a>
+              <a href="/about.html#contact" class="button outline"
+                >Contact us</a
+              >
             </article>
-          </article>
+          </section>
         </section>
       </section>
 
@@ -273,14 +280,18 @@
         <section class="container">
           <article>
             <img src="images/work-with-us.jpg" alt="Man with two thumbs up" />
-            <h2>Work with us?</h2>
-            <p>
-              Are you interested in working in a museum? Do you enjoy the fun
-              and excitement of sharing the wonders of nature with people?
-            </p>
-            <a href="#" class="button more-button outline"
-              ><span>Apply for internship</span></a
-            >
+            <article>
+              <h1>Work with us?</h1>
+              <p>
+                Are you interested in working in a museum? Do you enjoy the fun
+                and excitement of sharing the wonders of nature with people?
+              </p>
+              <a
+                href="/about.html#internship"
+                class="button more-button outline"
+                ><span>Apply for internship</span></a
+              >
+            </article>
           </article>
         </section>
       </section>
@@ -302,20 +313,26 @@
         <article>
           <h2>Opening hours</h2>
           <article class="infocard">
-            <div>Mon. - Fri.</div>
-            <div>10am - 20pm</div>
-            <div>Sat.</div>
-            <div>10am - 16am</div>
+            <div>Monday</div>
+            <div>Closed</div>
+            <div>Tue. - Wed.</div>
+            <div>10 am - 4 pm</div>
+            <div>Friday</div>
+            <div>10 am - 19 pm</div>
+            <div>Saturday</div>
+            <div>9 am - 16 pm</div>
+            <div>Sunday</div>
+            <div>9 am - 13 pm</div>
           </article>
         </article>
         <article>
           <h2>Quick links</h2>
           <ul>
-            <li><a href="#">Support the museum</a></li>
-            <li><a href="#">Looking for a job?</a></li>
-            <li><a href="#">Exhibitions</a></li>
-            <li><a href="#">Special events</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="/about.html">Support the museum</a></li>
+            <li><a href="/about.html">Looking for a job?</a></li>
+            <li><a href="/exhibitions/evolution.html">Exhibitions</a></li>
+            <li><a href="/events.html">Special events</a></li>
+            <li><a href="/about.html#contact">Contact us</a></li>
           </ul>
         </article>
         <article>

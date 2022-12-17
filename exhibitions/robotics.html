@@ -20,18 +20,18 @@
     <div class="slidein-menu" id="slidein_menu" aria-hidden="true">
       <ul>
         <li>
+          <a href="/" class="button"><span>Home</span></a>
+        </li>
+        <li>
           <a href="exhibitions/evolution.html" class="button outline"
             ><span>Exhibitions</span></a
           >
         </li>
         <li>
-          <a href="#" class="button"><span>Facilities</span></a>
+          <a href="/facilities.html" class="button"><span>Facilities</span></a>
         </li>
         <li>
-          <a href="#" class="button"><span>About Cosmu</span></a>
-        </li>
-        <li>
-          <a href="#" class="button"><span>Contact us</span></a>
+          <a href="/about.html" class="button"><span>About Cosmu</span></a>
         </li>
       </ul>
     </div>
@@ -55,12 +55,12 @@
           <nav id="main_nav">
             <ul class="menu" id="menu">
               <li>
-                <li>
-                  <a href="/" class="home"
-                    ><i class="fa-regular fa-hand-point-left"></i
-                    ><span>Home</span></a
-                  >
-                </li>
+                <a href="/" class="home"
+                  ><i class="fa-regular fa-hand-point-left"></i
+                  ><span>Home</span></a
+                >
+              </li>
+              <li>
                 <a href="/exhibitions/evolution.html" class="active"
                   ><span>Exhibitions</span></a
                 >
@@ -71,9 +71,6 @@
               <li>
                 <a href="/about.html"><span>About Cosmu</span></a>
               </li>
-              <li>
-                <a href="/contact.html"><span>Contact us</span></a>
-              </li>
             </ul>
           </nav>
         </div>
@@ -81,24 +78,30 @@
       <div class="header__bottom">
         <div class="container">
           <ul role="navigation">
-            <li>
-              <a href="/exhibitions/evolution.html"><span>Evolution</span></a>
+            <li id="evolution">
+              <a href="/exhibitions/evolution.html#evolution"
+                ><span>Evolution</span></a
+              >
             </li>
-            <li>
-              <a href="/exhibitions/cosmology.html"><span>Cosmology</span></a>
+            <li id="cosmology">
+              <a href="/exhibitions/cosmology.html#cosmology"
+                ><span>Cosmology</span></a
+              >
             </li>
-            <li>
-              <a href="/exhibitions/robotics.html" class="active"
+            <li id="robotics">
+              <a href="/exhibitions/robotics.html#robotics" class="active"
                 ><span>Robotics & AI</span></a
               >
             </li>
-            <li>
-              <a href="/exhibitions/biology.html"
+            <li id="biology">
+              <a href="/exhibitions/biology.html#biology"
                 ><span>Biology and Medicine</span></a
               >
             </li>
-            <li>
-              <a href="/exhibitions/ecology.html"><span>Ecology</span></a>
+            <li id="ecology">
+              <a href="/exhibitions/ecology.html#ecology"
+                ><span>Ecology</span></a
+              >
             </li>
           </ul>
         </div>
@@ -115,7 +118,10 @@
         <div class="exhibition-overlay robotics">
           <div class="container">
             <h1>Robotics & AI</h1>
-            <p>We have exciting exhibitions for all interesses.</p>
+            <p>
+              Robotics develops machines that can substitute for humans and
+              replicate human actions.
+            </p>
           </div>
         </div>
       </section>
@@ -143,21 +149,21 @@
                   design machines that can help and assist humans.
                 </p>
                 <img src="/images/exhibitions/robots2.jpg" alt="" />
-                <a
-                  href="https://en.wikipedia.org/wiki/Robotics"
-                  class="more-link"
-                  >Wikipedia</a
-                >
               </article>
               <article class="box">
                 <h2>Guided tours</h2>
                 <p>
                   There are guided tours of the museum that leave every hour.
                   These tours are 70 NOK per person and include a handy printed
-                  guide of the museum. If you would like to organise a guided
-                  tour for your group of 6 or more people, please contact us to
-                  arrange the tour.
+                  guide of the museum.
                 </p>
+                <p>
+                  If you would like to organise a guided tour for your group of
+                  6 or more people, please contact us to arrange the tour.
+                </p>
+                <a href="/about.html#contact" class="button more-button outline"
+                  ><span>Contact us</span></a
+                >
               </article>
             </article>
           </section>

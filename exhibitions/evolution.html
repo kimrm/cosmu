@@ -20,18 +20,18 @@
     <div class="slidein-menu" id="slidein_menu" aria-hidden="true">
       <ul>
         <li>
+          <a href="/" class="button"><span>Home</span></a>
+        </li>
+        <li>
           <a href="exhibitions/evolution.html" class="button outline"
             ><span>Exhibitions</span></a
           >
         </li>
         <li>
-          <a href="#" class="button"><span>Facilities</span></a>
+          <a href="/facilities.html" class="button"><span>Facilities</span></a>
         </li>
         <li>
-          <a href="#" class="button"><span>About Cosmu</span></a>
-        </li>
-        <li>
-          <a href="#" class="button"><span>Contact us</span></a>
+          <a href="/about.html" class="button"><span>About Cosmu</span></a>
         </li>
       </ul>
     </div>
@@ -71,9 +71,6 @@
               <li>
                 <a href="/about.html"><span>About Cosmu</span></a>
               </li>
-              <li>
-                <a href="/contact.html"><span>Contact us</span></a>
-              </li>
             </ul>
           </nav>
         </div>
@@ -81,26 +78,30 @@
       <div class="header__bottom">
         <div class="container">
           <ul role="navigation">
-            <li>
-              <a href="/exhibitions/evolution.html" class="active"
+            <li id="evolution">
+              <a href="/exhibitions/evolution.html#evolution" class="active"
                 ><span>Evolution</span></a
               >
             </li>
-            <li>
-              <a href="/exhibitions/cosmology.html"><span>Cosmology</span></a>
+            <li id="cosmology">
+              <a href="/exhibitions/cosmology.html#cosmology"
+                ><span>Cosmology</span></a
+              >
             </li>
-            <li>
-              <a href="/exhibitions/robotics.html"
+            <li id="robotics">
+              <a href="/exhibitions/robotics.html#robotics"
                 ><span>Robotics & AI</span></a
               >
             </li>
-            <li>
-              <a href="/exhibitions/biology.html"
+            <li id="biology">
+              <a href="/exhibitions/biology.html#biology"
                 ><span>Biology and Medicine</span></a
               >
             </li>
-            <li>
-              <a href="/exhibitions/ecology.html"><span>Ecology</span></a>
+            <li id="ecology">
+              <a href="/exhibitions/ecology.html#ecology"
+                ><span>Ecology</span></a
+              >
             </li>
           </ul>
         </div>
@@ -155,11 +156,16 @@
                 <h2>Guided tours</h2>
                 <p>
                   There are guided tours of the museum that leave every hour.
-                  These tours are 70 NOK per person and include a handy printed
-                  guide of the museum. If you would like to organise a guided
-                  tour for your group of 6 or more people, please contact us to
-                  arrange the tour.
+                  These tours are <strong>70 NOK</strong> per person and include
+                  a handy printed guide of the museum.
                 </p>
+                <p>
+                  If you would like to organise a guided tour for your group of
+                  6 or more people, please contact us to arrange the tour.
+                </p>
+                <a href="/about.html#contact" class="button more-button outline"
+                  ><span>Contact us</span></a
+                >
               </article>
             </article>
           </section>
