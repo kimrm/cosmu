@@ -57,6 +57,9 @@ textarea {
     padding:.5rem;
     border-radius: 10px;
     border-style:solid;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 a {    
@@ -200,6 +203,7 @@ form {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: .2rem;
+    
 }
 
 .outline {
@@ -661,6 +665,7 @@ main {
 .article__about__body {
     line-height: 1.6rem;
 }
+
 
 
 @media screen and (min-width: 800px) {
