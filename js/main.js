@@ -36,29 +36,36 @@ if (window.location.hash) {
     }    
 }
 
-document.querySelector("#contactForm").onsubmit = function() {
-    const modalHeading = document.querySelector("#modalHeading");
-    const modalContent = document.querySelector("#modalContent");
-
-    const contactName = document.querySelector("#contactName");
-
-    modalHeading.textContent = "Thank you, " + contactName.value + "!";
-    modalContent.textContent = "We appreciate you reaching out and will reply to you shortly.";
-    document.querySelector("#backdrop").classList.toggle("backdrop");
-    document.querySelector("#contactModal").classList.toggle("open");
+const contactForm = document.querySelector("#contactForm");
+if (contactForm) {
+    contactForm.onsubmit = function() {
+        const modalHeading = document.querySelector("#modalHeading");
+        const modalContent = document.querySelector("#modalContent");
     
-    return false;
-};
+        const contactName = document.querySelector("#contactName");
+    
+        modalHeading.textContent = "Thank you, " + contactName.value + "!";
+        modalContent.textContent = "We appreciate you reaching out and will reply to you shortly.";
+        document.querySelector("#backdrop").classList.toggle("backdrop");
+        document.querySelector("#contactModal").classList.toggle("open");
+        
+        return false;
+    };
+}
 
-document.querySelector("#closeModal").onclick = function() {
-    document.querySelector("#backdrop").classList.toggle("backdrop");
-    document.querySelector("#contactModal").classList.toggle("open");
-    const contactName = document.querySelector("#contactName");
-    const contactEmail = document.querySelector("#contactEmail");    
-    const contactMessage = document.querySelector("#contactMessage");
-    contactName.value = "";
-    contactEmail.value = "";
-    contactMessage.value = "";
+const closeModal = document.querySelector("#closeModal");
+if (closeModal) {
+    closeModal.onclick = function() {
+        document.querySelector("#backdrop").classList.toggle("backdrop");
+        document.querySelector("#contactModal").classList.toggle("open");
+        const contactName = document.querySelector("#contactName");
+        const contactEmail = document.querySelector("#contactEmail");    
+        const contactMessage = document.querySelector("#contactMessage");
+        contactName.value = "";
+        contactEmail.value = "";
+        contactMessage.value = "";
+    
+        return false;
+    };
+}
 
-    return false;
-};

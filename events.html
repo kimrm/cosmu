@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Cosmu - Community Science Museum. A science museum for everyone."
-    />
+    <meta name="description" content="Coming events at Cosmi" />
     <link rel="stylesheet" href="css/styles.css" />
     <script defer src="js/main.js"></script>
     <script defer src="js/imageGallery.js"></script>
@@ -15,22 +12,9 @@
       src="https://kit.fontawesome.com/33714fa395.js"
       crossorigin="anonymous"
     ></script>
-    <title>Cosmu - Community Science Museum</title>
+    <title>Cosmu - Events</title>
   </head>
   <body>
-    <div id="backdrop"></div>
-
-    <div class="image-gallery" id="imageGallery">
-      <div class="close" id="galleryClose">
-        <button><i class="fa-solid fa-circle-xmark"></i></button>
-      </div>
-      <h1 id="galleryTitle">Title</h1>
-      <div class="image-view">
-        <img src="/images/work-with-us.jpg" alt="" id="imageView" />
-      </div>
-      <div class="gallery" id="galleryList"></div>
-    </div>
-
     <div class="slidein-menu" id="slidein_menu" aria-hidden="true">
       <ul>
         <li>
@@ -42,9 +26,7 @@
           >
         </li>
         <li>
-          <a href="/facilities.html" class="button outline"
-            ><span>Facilities</span></a
-          >
+          <a href="/facilities.html" class="button"><span>Facilities</span></a>
         </li>
         <li>
           <a href="/about.html" class="button"><span>About Cosmu</span></a>
@@ -82,9 +64,7 @@
                 >
               </li>
               <li>
-                <a href="/facilities.html" class="active"
-                  ><span>Facilities</span></a
-                >
+                <a href="/facilities.html"><span>Facilities</span></a>
               </li>
               <li>
                 <a href="/about.html"><span>About Cosmu</span></a>
@@ -104,12 +84,74 @@
             check this page for updated schedule.
           </p>
         </section>
-        <section class="container schedule">
-          <ul>
-            <li>Aeronautics lectures</li>
-            <li>Night in the museum</li>
-            <li>Energetica exhibition</li>
+        <section class="container">
+          <ul class="event-schedule">
+            <li class="schedule">
+              <article>
+                <img
+                  src="/images/articles/prof-sheila.jpg"
+                  alt="Woman professor next to whiteboard"
+                />
+                <article>
+                  <h1>Aeronautics lectures</h1>
+                  <p>
+                    It is our pleasure to announce that Prof Sheila Widnall from
+                    the Massachusetts Institute of Technology will be delivering
+                    3 lectures on the development of aeronautics and where the
+                    future lies in this exciting ‘space’.
+                  </p>
+                  <p>The lectures will take place on december 20, 21 and 22.</p>
+                </article>
+              </article>
+            </li>
+            <li class="schedule">
+              <article>
+                <img
+                  src="/images/articles/night-in-the-museum.jpg"
+                  alt="Museum at night time. Exhibition with elephant/mammooth"
+                />
+                <article>
+                  <h1>Night in the museum</h1>
+                  <p>
+                    Get your family together for an exciting night in the museum
+                    as you sleep over beside dinosaurs and science displays.
+                    Bring your own sleeping bag and get ready to rough it as we
+                    go exploring the wonders of science.
+                  </p>
+                  <p>We arrange this sleepovers every wednesday.</p>
+                </article>
+              </article>
+            </li>
+            <li class="schedule">
+              <article>
+                <img
+                  src="/images/articles/energetica.jpg"
+                  alt="Energy experiment device"
+                />
+                <article>
+                  <h1>Energetica exhibition</h1>
+                  <p>
+                    On loan from the NEMO Science Museum in Amsterdam, the
+                    Energetica exhibition is coming to the Community Science
+                    Museum!
+                  </p>
+                  <p>
+                    It’s a series of installations that allow visitors to
+                    experience the power of the elements as we harness them.
+                    From solar energy powering lighting, to ‘Wind Island’ that
+                    shows how turbines are able to use and control wind to
+                    create power.
+                  </p>
+                  <p>The exhibition is available all December.</p>
+                </article>
+              </article>
+            </li>
           </ul>
+        </section>
+        <section class="container">
+          <a href="/about.html#contact" class="button outline more-button"
+            >Contact us for more information</a
+          >
         </section>
       </section>
     </main>
@@ -157,8 +199,8 @@
           <article class="infocard">
             <div>Address</div>
             <div>
-              <p>Musum road 123</p>
-              <p>9999 Musum City</p>
+              <p>Vågahaugen 55</p>
+              <p>9303 Silsand</p>
             </div>
             <div>Phone</div>
             <div>41 12 98 87</div>
@@ -168,9 +210,7 @@
         </article>
       </section>
       <section class="container">
-        <span class="copyright"
-          >Copyright © 2022 Cosmu - Community Science Museum
-        </span>
+        <span class="copyright">Copyright © 2022 kimrune.dev </span>
       </section>
     </footer>
   </body>

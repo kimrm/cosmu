@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Cosmu - Community Science Museum. A science museum for everyone."
-    />
+    <meta name="description" content="The museum facilites" />
     <link rel="stylesheet" href="css/styles.css" />
     <script defer src="js/main.js"></script>
     <script defer src="js/imageGallery.js"></script>
@@ -15,10 +12,10 @@
       src="https://kit.fontawesome.com/33714fa395.js"
       crossorigin="anonymous"
     ></script>
-    <title>Cosmu - Community Science Museum</title>
+    <title>Cosmu - Facilities</title>
   </head>
   <body>
-    <div id="backdrop"></div>
+    <div id="backdrop" aria-hidden="true"></div>
 
     <div class="image-gallery" id="imageGallery">
       <div class="close" id="galleryClose">
@@ -28,7 +25,11 @@
       </div>
       <h1 id="galleryTitle">Title</h1>
       <div class="image-view">
-        <img src="/images/work-with-us.jpg" alt="" id="imageView" />
+        <img
+          src="/images/work-with-us.jpg"
+          alt="Man with two thumbs up"
+          id="imageView"
+        />
       </div>
       <div class="gallery" id="galleryList"></div>
     </div>
@@ -113,7 +114,7 @@
             <div class="image">
               <img
                 src="/images/facilites/library.jpg"
-                alt="3 stories library"
+                alt="Three floors library"
               />
             </div>
             <section>
@@ -131,24 +132,24 @@
                   <a href="#library" id="libraryGalleryLink1"
                     ><img
                       src="/images/gallery/library/lib1.jpg"
-                      alt="Library gallery 1"
+                      alt="Thumbnail of white book shelf isles"
                   /></a>
                   <a href="#library" id="libraryGalleryLink2"
                     ><img
                       src="/images/gallery/library/lib2.jpg"
-                      alt="Library gallery 2"
+                      alt="Thumbnail of book shelf with decorative light bulbs in front"
                   /></a>
 
                   <a href="#library" id="libraryGalleryLink3"
                     ><img
                       src="/images/gallery/library/lib3.jpg"
-                      alt="Library gallery 3"
+                      alt="Thumbnail of closeup picture of books in shelf"
                   /></a>
 
                   <a href="#library" id="libraryGalleryLink4"
                     ><img
                       src="/images/gallery/library/lib4.jpg"
-                      alt="Library gallery 4"
+                      alt="Thumbnail of 4 floors with books and stairs. People walking around and hanging out"
                   /></a>
                 </div>
               </section>
@@ -173,25 +174,25 @@
                 <a href="#restaurant" id="restaurantGalleryLink1"
                   ><img
                     src="/images/gallery/restaurant/restaurant1.jpg"
-                    alt="Restaurant gallery 1"
+                    alt="Thumbnail of dining area with tables and chairs"
                 /></a>
 
                 <a href="#restaurant" id="restaurantGalleryLink2"
                   ><img
                     src="/images/gallery/restaurant/restaurant2.jpg"
-                    alt="Restaurant gallery 2"
+                    alt="Thumbnail of dining area and entrance to restaurant"
                 /></a>
 
                 <a href="#restaurant" id="restaurantGalleryLink3"
                   ><img
                     src="/images/gallery/restaurant/restaurant3.jpg"
-                    alt="Restaurant gallery 3"
+                    alt="Thumbnail of dining area and bar desk"
                 /></a>
 
                 <a href="#restaurant" id="restaurantGalleryLink4"
                   ><img
                     src="/images/gallery/restaurant/restaurant4.jpg"
-                    alt="Restaurant gallery 4"
+                    alt="Thumbnail of food set on the table with people around, reaching for the food"
                 /></a>
               </div>
             </section>
@@ -200,15 +201,17 @@
         <section class="container">
           <section class="facilities__shop" id="shop">
             <div class="image">
-              <img src="/images/facilites/shop.jpg" alt="3 stories library" />
+              <img
+                src="/images/facilites/shop.jpg"
+                alt="Open/closed sign on the shop door entrance"
+              />
             </div>
             <section>
               <h1>Cosmu Shop</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Sapiente voluptatem omnis quo ipsum commodi ipsa quam veniam ea?
-                Iste excepturi enim quos ipsum deleniti perspiciatis ut
-                asperiores delectus, officiis quas!
+                Our shop offers a range of memorabilia from the museum as well
+                as great gifts and activity packs that allow you to continue to
+                explore science even after you’ve left the museum.
               </p>
               <section class="gallery">
                 <div>
@@ -218,25 +221,25 @@
                   <a href="#shop" id="shopGalleryLink1"
                     ><img
                       src="/images/gallery/shop/shop1.jpg"
-                      alt="Shop gallery 1"
+                      alt="Thumbnail of clothes in clothing racks and shelf"
                   /></a>
 
                   <a href="#shop" id="shopGalleryLink2"
                     ><img
                       src="/images/gallery/shop/shop2.jpg"
-                      alt="Shop gallery 2"
+                      alt="Thumbnail of large shop area with isles, racks and shelf"
                   /></a>
 
                   <a href="#shop" id="shopGalleryLink3"
                     ><img
                       src="/images/gallery/shop/shop3.jpg"
-                      alt="Shop gallery 3"
+                      alt="Thumbnail of shelf with cartons and boxes"
                   /></a>
 
                   <a href="#shop" id="shopGalleryLink4"
                     ><img
                       src="/images/gallery/shop/shop4.jpg"
-                      alt="Shop gallery 4"
+                      alt="Thumbnail of shop counter desk"
                   /></a>
                 </div>
               </section>
@@ -248,7 +251,10 @@
         <section class="for-kids">
           <section class="container">
             <article class="two-col">
-              <img src="/images/facilites/kids.svg" alt="" />
+              <img
+                src="/images/facilites/kids.svg"
+                alt="Illustration of two kids standing in front of each other"
+              />
               <article>
                 <h1>For kids</h1>
                 <p>
@@ -271,6 +277,13 @@
                   find out more about the holiday club and how you can join,
                   send us a message.
                 </p>
+                <div>
+                  <a
+                    href="/about.html#contact"
+                    class="button outline more-button"
+                    ><span>Message us</span></a
+                  >
+                </div>
               </article>
             </article>
           </section>
@@ -278,7 +291,10 @@
         <section class="for-teachers">
           <section class="container">
             <article class="two-col">
-              <img src="/images/facilites/teachers.svg" alt="" />
+              <img
+                src="/images/facilites/teachers.svg"
+                alt="Illustration of teacher pointing at board"
+              />
               <article>
                 <h1>For teachers</h1>
                 <p>
@@ -293,6 +309,13 @@
                   facilities and to arrange a time to bring your students
                   through for a visit.
                 </p>
+                <div>
+                  <a
+                    href="/about.html#contact"
+                    class="button outline more-button"
+                    ><span>Get in touch</span></a
+                  >
+                </div>
               </article>
             </article>
           </section>
@@ -343,8 +366,8 @@
           <article class="infocard">
             <div>Address</div>
             <div>
-              <p>Musum road 123</p>
-              <p>9999 Musum City</p>
+              <p>Vågahaugen 55</p>
+              <p>9303 Silsand</p>
             </div>
             <div>Phone</div>
             <div>41 12 98 87</div>
@@ -354,9 +377,7 @@
         </article>
       </section>
       <section class="container">
-        <span class="copyright"
-          >Copyright © 2022 Cosmu - Community Science Museum
-        </span>
+        <span class="copyright">Copyright © 2022 kimrune.dev </span>
       </section>
     </footer>
   </body>
