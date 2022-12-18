@@ -96,9 +96,9 @@
 }
 
 .opportunity .article-image img {    
-    border-radius: 100px;
+    border-radius: 60%;
     height: 200px;
-    width: 200px;
+    width: 200px;    
     object-fit: cover;
     object-position: center;           
 }
@@ -113,7 +113,7 @@
 @media screen and (min-width: 800px) {
     .opportunity .container > article,
     .researchers .container > article {        
-        grid-template-columns: auto 2fr;
+        grid-template-columns: auto auto;
         gap:4rem;    
         padding: 4rem 0;
         width: 70%;
@@ -121,6 +121,7 @@
     }
     .researchers .article-image img {            
         max-width: 100%;      
+        min-width: 300px;
         height: 100%;  
         width: 100%;
         object-fit: fill;
