@@ -23,8 +23,8 @@
     background-image: linear-gradient(90deg, #FF8947, #53268e);
 }
 
-.facilities__library img,
-.facilities__shop img {    
+.facilities__library > .image img,
+.facilities__shop > .image img {    
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -191,12 +191,12 @@
         grid-template-columns: 40% auto;    
     }
 
-    .facilities__library img,
-    .facilities__shop img {            
+    .facilities__library > .image img,
+    .facilities__shop > .image img {            
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
 
 

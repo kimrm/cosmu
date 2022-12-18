@@ -28,14 +28,6 @@ function reportWindowSize() {
 
 window.onresize = reportWindowSize;
 
-
-if (window.location.hash) {    
-    const target = document.querySelector(window.location.hash);
-    if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-    }    
-}
-
 const contactForm = document.querySelector("#contactForm");
 if (contactForm) {
     contactForm.onsubmit = function() {

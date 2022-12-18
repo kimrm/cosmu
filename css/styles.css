@@ -5,16 +5,19 @@
 @font-face {    
     font-family: Righteous;
     src: url(../fonts/Righteous/Righteous-Regular.ttf);    
+    font-display: swap;
 }
 
 @font-face {    
     font-family: "Open Sans";
     src: url(../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);    
+    font-display: swap;
 }
 
 @font-face {    
     font-family: "Open Sans Bold";
     src: url(../fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf);    
+    font-display: swap;
 }
 
 :root {
@@ -814,6 +817,11 @@ footer {
     grid-template-rows: 1fr auto;
     gap: 4rem;
     padding: 4rem 0;
+}
+
+.quick-links a {
+    display: block;
+    padding: .5rem 0;    
 }
 
 footer section {

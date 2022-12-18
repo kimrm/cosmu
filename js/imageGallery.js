@@ -48,10 +48,8 @@ const showLibraryGallery = function() {
     const imgView = document.querySelector("#imageView");
 
     const clickedImg = this.firstChild;
-
-    console.log(clickedImg);
     
-    imgView.src = clickedImg.src;
+    imgView.src = clickedImg.dataset.image;
     
     gallery.classList.toggle("image-gallery__show");
     createGallery(libraryGallery);
@@ -68,7 +66,7 @@ const showRestaurantGallery = function() {
     
     const clickedImg = this.firstChild;
 
-    imgView.src = clickedImg.src;
+    imgView.src = clickedImg.dataset.image;
     
     gallery.classList.toggle("image-gallery__show");
     createGallery(restaurantGallery);
@@ -85,7 +83,7 @@ const showShopGallery = function() {
     
     const clickedImg = this.firstChild;
 
-    imgView.src = clickedImg.src;
+    imgView.src = clickedImg.dataset.image;
     
     gallery.classList.toggle("image-gallery__show");
     createGallery(shopGallery);

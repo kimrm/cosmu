@@ -17,7 +17,7 @@
   <body>
     <div id="backdrop" aria-hidden="true"></div>
 
-    <div class="image-gallery" id="imageGallery">
+    <div class="image-gallery" id="imageGallery" aria-hidden="true">
       <div class="close" id="galleryClose">
         <button aria-hidden="true" title="Close image gallery modal">
           <i class="fa-solid fa-circle-xmark"></i>
@@ -25,11 +25,7 @@
       </div>
       <h1 id="galleryTitle">Title</h1>
       <div class="image-view">
-        <img
-          src="/images/work-with-us.jpg"
-          alt="Man with two thumbs up"
-          id="imageView"
-        />
+        <img src="" alt="" id="imageView" />
       </div>
       <div class="gallery" id="galleryList"></div>
     </div>
@@ -55,7 +51,7 @@
       </ul>
     </div>
 
-    <button class="menu-button" id="menu_button">
+    <button class="menu-button" id="menu_button" aria-hidden="true">
       <i
         class="fa-solid fa-bars"
         id="menu_icon"
@@ -103,10 +99,9 @@
         <section class="container facilities__header">
           <h1>The Museum Facilities</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            repellendus quis illum laudantium vero fugiat atque, esse, similique
-            sint delectus nesciunt aspernatur magnam hic ipsa ducimus omnis
-            voluptate quos architecto?
+            Take a break from the exhibitions and enjoy some quite time in the
+            library, good food and drinks in the restaurant or browse in our
+            shop.
           </p>
         </section>
         <section class="container">
@@ -131,25 +126,29 @@
                 <div>
                   <a href="#library" id="libraryGalleryLink1"
                     ><img
-                      src="/images/gallery/library/lib1.jpg"
+                      src="/images/gallery/library/thumbnails/lib1.jpg"
                       alt="Thumbnail of white book shelf isles"
+                      data-image="/images/gallery/library/lib1.jpg"
                   /></a>
                   <a href="#library" id="libraryGalleryLink2"
                     ><img
-                      src="/images/gallery/library/lib2.jpg"
+                      src="/images/gallery/library/thumbnails/lib2.jpg"
                       alt="Thumbnail of book shelf with decorative light bulbs in front"
+                      data-image="/images/gallery/library/lib2.jpg"
                   /></a>
 
                   <a href="#library" id="libraryGalleryLink3"
                     ><img
-                      src="/images/gallery/library/lib3.jpg"
+                      src="/images/gallery/library/thumbnails/lib3.jpg"
                       alt="Thumbnail of closeup picture of books in shelf"
+                      data-image="/images/gallery/library/lib3.jpg"
                   /></a>
 
                   <a href="#library" id="libraryGalleryLink4"
                     ><img
-                      src="/images/gallery/library/lib4.jpg"
+                      src="/images/gallery/library/thumbnails/lib4.jpg"
                       alt="Thumbnail of 4 floors with books and stairs. People walking around and hanging out"
+                      data-image="/images/gallery/library/lib4.jpg"
                   /></a>
                 </div>
               </section>
@@ -161,10 +160,8 @@
           <section class="container__wide" id="restaurant">
             <h1>Food and drink</h1>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-              quisquam unde ullam eius, sint sit itaque rem quasi omnis ab
-              voluptates! Recusandae ab minus odio laudantium. Eaque
-              exercitationem ex quod?
+              Our restaurant serves fresh, quallity food. Made from local
+              ingredients.
             </p>
             <section class="gallery">
               <div>
@@ -173,26 +170,30 @@
               <div>
                 <a href="#restaurant" id="restaurantGalleryLink1"
                   ><img
-                    src="/images/gallery/restaurant/restaurant1.jpg"
+                    src="/images/gallery/restaurant/thumbnails/restaurant1.jpg"
                     alt="Thumbnail of dining area with tables and chairs"
+                    data-image="/images/gallery/restaurant/restaurant1.jpg"
                 /></a>
 
                 <a href="#restaurant" id="restaurantGalleryLink2"
                   ><img
-                    src="/images/gallery/restaurant/restaurant2.jpg"
+                    src="/images/gallery/restaurant/thumbnails/restaurant2.jpg"
                     alt="Thumbnail of dining area and entrance to restaurant"
+                    data-image="/images/gallery/restaurant/restaurant2.jpg"
                 /></a>
 
                 <a href="#restaurant" id="restaurantGalleryLink3"
                   ><img
-                    src="/images/gallery/restaurant/restaurant3.jpg"
+                    src="/images/gallery/restaurant/thumbnails/restaurant3.jpg"
                     alt="Thumbnail of dining area and bar desk"
+                    data-image="/images/gallery/restaurant/restaurant3.jpg"
                 /></a>
 
                 <a href="#restaurant" id="restaurantGalleryLink4"
                   ><img
-                    src="/images/gallery/restaurant/restaurant4.jpg"
+                    src="/images/gallery/restaurant/thumbnails/restaurant4.jpg"
                     alt="Thumbnail of food set on the table with people around, reaching for the food"
+                    data-image="/images/gallery/restaurant/restaurant4.jpg"
                 /></a>
               </div>
             </section>
@@ -220,26 +221,30 @@
                 <div>
                   <a href="#shop" id="shopGalleryLink1"
                     ><img
-                      src="/images/gallery/shop/shop1.jpg"
+                      src="/images/gallery/shop/thumbnails/shop1.jpg"
                       alt="Thumbnail of clothes in clothing racks and shelf"
+                      data-image="/images/gallery/shop/shop1.jpg"
                   /></a>
 
                   <a href="#shop" id="shopGalleryLink2"
                     ><img
-                      src="/images/gallery/shop/shop2.jpg"
+                      src="/images/gallery/shop/thumbnails/shop2.jpg"
                       alt="Thumbnail of large shop area with isles, racks and shelf"
+                      data-image="/images/gallery/shop/shop2.jpg"
                   /></a>
 
                   <a href="#shop" id="shopGalleryLink3"
                     ><img
-                      src="/images/gallery/shop/shop3.jpg"
+                      src="/images/gallery/shop/thumbnails/shop3.jpg"
                       alt="Thumbnail of shelf with cartons and boxes"
+                      data-image="/images/gallery/shop/shop3.jpg"
                   /></a>
 
                   <a href="#shop" id="shopGalleryLink4"
                     ><img
-                      src="/images/gallery/shop/shop4.jpg"
+                      src="/images/gallery/shop/thumbnails/shop4.jpg"
                       alt="Thumbnail of shop counter desk"
+                      data-image="/images/gallery/shop/shop4.jpg"
                   /></a>
                 </div>
               </section>
@@ -342,21 +347,27 @@
             <div>Monday</div>
             <div>Closed</div>
             <div>Tue. - Wed.</div>
-            <div>10 am - 4 pm</div>
+            <div>10.00 - 16.00</div>
             <div>Friday</div>
-            <div>10 am - 19 pm</div>
+            <div>10.00 - 19.00</div>
             <div>Saturday</div>
-            <div>9 am - 16 pm</div>
+            <div>09.00 - 16.00</div>
             <div>Sunday</div>
-            <div>9 am - 13 pm</div>
+            <div>09.00 - 13.00</div>
           </article>
         </article>
         <article>
           <h2>Quick links</h2>
-          <ul>
-            <li><a href="/about.html#support">Support the museum</a></li>
-            <li><a href="/about.html#internship">Looking for a job?</a></li>
-            <li><a href="/exhibitions/evolution.html">Exhibitions</a></li>
+          <ul class="quick-links">
+            <li>
+              <a href="/about.html#support">Support the museum</a>
+            </li>
+            <li>
+              <a href="/about.html#internship">Looking for a job?</a>
+            </li>
+            <li>
+              <a href="/exhibitions/evolution.html">Exhibitions</a>
+            </li>
             <li><a href="/events.html">Special events</a></li>
             <li><a href="/about.html#contact">Contact us</a></li>
           </ul>
